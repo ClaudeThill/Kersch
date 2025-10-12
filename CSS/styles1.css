@@ -1,0 +1,76 @@
+body    {font-size: 100%;
+        font-family: "Helvetica Neue", Arial, sans-serif, grey;
+        line-height: 1.5;
+        color: rgb(51, 255, 0) ;
+        background-image: url(../img/Eifel-Wald.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;}
+
+h1      {font-size: 2rem;
+        font-weight:fat;
+        text-align: center;
+        text-decoration: underline;
+        padding: 2px;
+        margin: 5px;}
+
+h2      {text-align: center;
+        text-decoration: underline;}
+
+h6      {color: aqua;}   
+
+nav     { background-color: darkgoldenrod;}
+
+nav ul  {margin: 0;
+        display: flex;
+        list-style: none;}
+
+nav a   {color: aqua;
+        text-decoration: none;
+        display: block;
+        padding: 0.8rem;}
+
+nav a.aktuell 
+        {font-weight: bold;
+        color: #476f9cd2;}
+ 
+        /* CONTAINER FÜR ALLE FOTOS*/
+.galerie{display: flex;
+        flex-direction: row;            /*alles horizontal*/
+        justify-content: center ;       /*gleicher Abstand alles horizontal*/
+        align-items: flex-start;        /*richtet die Bilder oben aus */    
+        flex-wrap: wrap;                /*sorgt dafür dass die Bilder umbrechen, wenn der Platz nicht reicht*/
+        gap: 15px;                      /* Abstand zwischen den Fotos */
+        margin-top: 15px;}
+                      
+        /*EINZELNES FOTO + BILD*/
+.foto   {margin: auto;
+        text-align: center;
+        border: 4px solid greenyellow;} /*der grüne Rand*/
+        
+        /* DAS EIGENTLICHE FOTO*/
+.foto img  
+        {display: block;                 /*verhindert dass der Kommentar daneben rutscht*/
+        border-radius: 8px;              /*leicht abgerundete Ecken*/       
+        height: 400px;                             
+        width: auto;}                     
+        
+        /* Kommentar unter dem Bild*/
+.kommentar
+        {font-size: 20px;
+        color: greenyellow;
+        background-color: darkgoldenrod;
+        text-align: center;}
+
+        /*der Footer*/
+footer  {position: fixed;
+        bottom: 0;
+        left: 0px;
+        width: 100%;
+        height: 15px;                           /*feste Höhe*/
+        background-color: darkgoldenrod;      /*Hintergrund-Farbe*/         
+        color: aqua;                          /*Text-Farbe*/
+        display: flex;                          /*Flexbox aktivieren*/
+        align-items: center;                    /*vertikal zentrieren*/
+        padding: 0 50%; }                       /*Seitenabstand*/
