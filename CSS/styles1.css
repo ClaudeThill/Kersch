@@ -53,7 +53,7 @@ nav a.aktuell
 .foto img  
         {display: block;                 /*verhindert dass der Kommentar daneben rutscht*/
         border-radius: 8px;              /*leicht abgerundete Ecken*/       
-        height: 250px;                             
+        height: 400px;                             
         width: auto;}                     
         
         /* Kommentar unter dem Bild*/
