@@ -1,0 +1,203 @@
+body
+        {font-size: 100%;
+        font-family: "Helvetica Neue", Arial, sans-serif, grey;
+        line-height: 1.5;
+        color: rgb(51, 255, 0) ;
+        background-image: url(../img/Eifel-Wald.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;}
+
+h1      {font-size: 2rem;
+        font-weight:fat;
+        text-align: center;
+        text-decoration: underline;
+        padding: 2px;
+        margin: 5px;}
+
+h2      {text-align: center;
+        text-decoration: underline;}
+
+h6      {color: aqua;} 
+    
+nav     { background-color: darkgoldenrod;}
+
+nav ul  {margin: 0;
+        display: flex;
+        list-style: none;}
+
+nav a   {color: aqua;
+        text-decoration: none;
+        display: block;
+        padding: 0.8rem;}
+
+nav a.aktuell 
+        {font-weight: bold;
+        color: #476f9cd2;}
+
+.container{
+        width: 100%;
+        min-height: 100vh;
+        display: flexbox;   
+        align-items: center;
+        justify-content: center;
+        padding: 15px ;}
+
+.gallery
+        {display: flex;
+        flex-direction: row;        /*alles horizontal*/
+        justify-content: center ;   /*gleicher Abstand alles horizontal*/
+        align-items: center;        /*richtet die Bilder oben aus */    
+        flex-wrap: wrap;            /*sorgt dafür dass die Bilder umbrechen*/
+        gap: 15px;                  /* Abstand zwischen den Fotos */
+        margin-top: 10px;           /* Abstand oben*/
+        margin: auto;
+        text-align: center;}
+
+.gallery img
+        {display: flex;                
+        border-radius: 8px;                 
+        height: 400px;                            
+        width: auto;
+        border: 4px solid greenyellow;          /*Rand um die Bilder*/
+        background-color: darkgoldenrod;}
+.gallery p
+        {background:green;
+        margin: auto;
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(158, 248, 22);}
+
+
+/*AB HIER DIE STYLES FÜR PÄCHTER*/
+
+.paechter
+        {display:flex;
+        flex-direction: column;                 /* Bild oben , Text unten*/
+        align-items: center;                    /* zentriert Text und Bild horizontal */
+        text-align: center;
+        background-color: green;
+        border-radius: 8px;                     /*leicht abgerundete Ecken*/
+        }
+.paechter img
+        {height:350px;
+        width: auto;
+        border-radius: 8px;}
+.paechter p
+        {margin: auto;
+        font-size: 20px;
+        color: rgb(158, 248, 22);}
+
+
+/*AB HIER DIE STYLES FÜR SCHUSSBUCH*/
+
+.schussbuch
+        {display: flex;
+        flex-direction: row;        /*alles horizontal*/
+        justify-content: center ;   /*gleicher Abstand alles horizontal*/
+        align-items: center;        /*richtet die Bilder oben aus */    
+        flex-wrap: wrap;            /*sorgt dafür dass die Bilder umbrechen*/
+        gap: 15px;                  /* Abstand zwischen den Fotos */
+        margin-top: 15px;           /* Abstand oben*/
+        margin: auto;
+        text-align: center;}
+.schussbuch img
+        {display: flex;                
+        border-radius: 8px;                 
+        height: 180px;                            
+        width: auto;
+        border: 4px solid greenyellow;          /*Rand um die Bilder*/
+        background-color: darkgoldenrod;}
+.schussbuch p
+        {margin: auto;
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(158, 248, 22);}
+
+
+/*AB HIER DIE STYLES FÜR VIDEOS*/
+
+.video-row
+        {display: flex;                 /*ordnet Videos nebeneinander*/
+        justify-content: center;        /*zentriert Videos horizontal auf der Seite*/
+        gap: 30px;                      /*Abstand zwischen den Videos*/
+        flex-wrap: wrap;                /*sorgt für Umbruch auf kleinen Bildschirmen*/
+        margin-top: 40px;}              /*fügt oben einen Abstand von 40 px ein*/
+
+.video-box
+        {text-align: center;            /*Text unter dem Video zentrieren*/
+        width: 500px;}                  /*legt die max. Breite jeder Box fest*/
+
+video   
+        {width: 100%;                   /*passt sich der Box-Breite an*/
+        border: 4px solid greenyellow;/*fügt eine Umrandung um das Video*/
+        border-radius: 8px;}            /*Rundet die Ecken des Videos leicht ab*/
+        
+
+p       
+        {margin-top: 10px;              /*fügt 10 px Abstand zwischen Video und Text hinzu*/
+        font-size: 25px;                /*Schrift-Grösse*/
+        color: greenyellow;           /*Schrift-Farbe*/
+        text-align: center;}           /*Text mittig*/
+
+/*AB HIER DIE STYLES FÜR DIE Preisliste*/
+
+table 
+        {border-collapse: collapse;
+        width: 100%;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;}
+th, td 
+        {background:green;
+        border: 1px solid #e62a2a;
+        padding:8px;
+        text-align: right;}   
+    
+thead th, td 
+        {background: green;}
+
+th[scope=row]
+        {background: green;
+        font-weight:600;
+        width: 140px;}
+
+.pricelist
+        {display: flex;
+        flex-direction: row;        /*alles horizontal*/
+        justify-content: center ;   /*gleicher Abstand alles horizontal*/
+        align-items: center;        /*richtet die Bilder oben aus */    
+        flex-wrap: wrap;            /*sorgt dafür dass die Bilder umbrechen*/       
+        gap: 4px;                  /* Abstand zwischen den Fotos */
+        text-align: center;
+        background-color: green;
+        border: 1px solid greenyellow;}
+
+.pricelist img
+        {display: flex;                
+        border-radius: 8px;                 
+        height: 50px;                            
+        width: auto;
+        border: 4px solid greenyellow;          /*Rand um die Bilder*/
+        background-color: darkgoldenrod;
+        padding: 15px;}
+
+.pricelist p
+        {margin: auto;
+        font-size: 10px;
+        font-weight: bold;
+        color: rgb(158, 248, 22);}
+
+/*AB HIER DIE STYLES FÜR DIE FUSSNOTE*/
+
+footer  {position: fixed;
+        bottom: 0;
+        left: 0px;
+        width: 100%;
+        height: 15px;
+        background-color: darkgoldenrod;       
+        color: aqua;
+        display: flex;
+        align-items: center;
+        padding: 0 50%; }      
